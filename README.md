@@ -230,3 +230,29 @@ eth.sendTransaction({from:"eth01 계정주소", to: "eth02 계정주소", value:
 
 결과 값으로 txhash 값이 나오게 된다.
 
+<img src="https://github.com/kim6394/PrivateEthereum/blob/master/screenshot/txhash.PNG?raw=true">
+
+<br>
+
+txhash 값을 가져와서 트랜잭션을 확인해보자
+
+<br>
+
+<img src="https://github.com/kim6394/PrivateEthereum/blob/master/screenshot/transaction%20%ED%99%95%EC%9D%B8.PNG?raw=true">
+
+현재 블록해시값과 넘버값이 null이다.
+
+다시 채굴을 진행하고, 6개정도 채굴이 되면 트랜잭션 값을 다시 확인해보자
+
+<br>
+
+<img src="https://github.com/kim6394/PrivateEthereum/blob/master/screenshot/transaction%20%EC%9E%AC%ED%99%95%EC%9D%B8.PNG?raw=true">
+
+이제 블록값을 확인할 수 있다!
+
+채굴된 블록값을 확인해보자
+
+<br>
+
+<img src="https://github.com/kim6394/PrivateEthereum/blob/master/screenshot/%EC%B1%84%EA%B5%B4%EB%90%9C%20%EB%B8%94%EB%A1%9D%ED%99%95%EC%9D%B8.PNG?raw=true">
+

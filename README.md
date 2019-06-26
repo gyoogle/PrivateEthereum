@@ -205,9 +205,13 @@ miner.stop()
 eth.getBalance(계정주소)
 ```
 
+<img src="https://github.com/kim6394/PrivateEthereum/blob/master/screenshot/%EC%B1%84%EA%B5%B4.PNG?raw=true">
+
+어마어마한 부자가 되었다..
+
 <br>
 
-트랜잭션을 생성하기 전에 먼저 계정을 unlock 한다.
+트랜잭션을 생성하기 전에 먼저 계정을 unlock 한다. (eth01과 eth02 둘 다)
 
 ```
 web3.personal.unlockAccount("계정주소");
@@ -215,4 +219,14 @@ web3.personal.unlockAccount("계정주소");
 패스워드는 내가 입력한 걸 넣는다. (현재 실습에서는 test1234)
 Unlock이 완료되면 true라고 나온다.
 ```
+
+
+
+이제 트랜잭션을 진행한다.
+
+```
+eth.sendTransaction({from:"eth01 계정주소", to: "eth02 계정주소", value: web3.toWei(1, "ether")})
+```
+
+결과 값으로 txhash 값이 나오게 된다.
 

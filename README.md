@@ -205,6 +205,14 @@ miner.stop()
 eth.getBalance(계정주소)
 ```
 
-
-
 <br>
+
+트랜잭션을 생성하기 전에 먼저 계정을 unlock 한다.
+
+```
+web3.personal.unlockAccount("계정주소");
+
+패스워드는 내가 입력한 걸 넣는다. (현재 실습에서는 test1234)
+Unlock이 완료되면 true라고 나온다.
+```
+
